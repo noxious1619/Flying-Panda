@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import logo from "./logo.png";
 
-const API = "http://localhost:5000";
+const API = "https://flying-panda-tnha.vercel.app/";
 
 export default function App() {
 
