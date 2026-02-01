@@ -7,9 +7,10 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-  origin: ["https://flying-panda-frontend.vercel.app"], // Replace with your actual Vercel Frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin: "https://flying-panda-psi.vercel.app", 
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 200
 }));
 app.use(express.json());
 app.use(logger);
